@@ -12,29 +12,27 @@
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> 
 </head>
 <body>
-    <div class="table-responsive">
-      <div>
-        <h1 id="title">Pagination in DOM Manupulation</h1>
-        <div>
-          <p id="description">
-            About this page:This page gives details about test suite. You will get details like id, name, and email.
-          </p>
-
+  <div class="heading">
+    <h1 id="title">Pagination in DOM Manupulation</h1>
+    <p id="description">About this page:This page gives details about test suite. You will get details like id, name, and email.</p>
+</div>
+<div class="display_screen"></div>
+<div class="table-responsive">
+    <div class="table table-bordered">
+        <div id="buttons" class="pagi">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination" style="cursor: pointer;">
+                  <li class="page-item"><a class="page-link Previous" for="Previous">Previous</a></li>
+                  <li class="page-item"><a class="page-link" for="1" onclick="clicking(this)">1</a></li>
+                  <li class="page-item"><a class="page-link" for="2" onclick="clicking(this)">2</a></li>
+                  <li class="page-item"><a class="page-link" for="3" onclick="clicking(this)">3</a></li>
+                  <li class="page-item"><a class="page-link Next" for="Next">Next</a></li>
+                </ul>
+              </nav>
         </div>
-      </div>
-
     </div>
-    <div id="buttons" class="d-flex justify-content-center">
-    <nav aria-label="Page navigation example">
-        <ul class="pagination">
-          <li class="page-item"><a class="page-link" for="Previous" >Previous</a></li>
-          <li onclick="btn_clicking(this)" class="page-item"><a class="page-link" for="1" >1</a></li>
-          <li onclick="btn_clicking(this)" class="page-item"><a class="page-link" for="2" >2</a></li>
-          <li onclick="btn_clicking(this)" class="page-item"><a class="page-link" for="3" >3</a></li>
-          <li class="page-item"><a class="page-link" for="Next" >Next</a></li>
-        </ul>
-      </nav>
-    </div>
+    
+</div>
    <script src="script.js"></script>
    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script> 
 </body>
